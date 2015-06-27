@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFFFFF"
+    tools:context="com.capitalone.dealnreward.dealandreward.RewardActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/mainLevel"
+        android:weightSum="1">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:gravity="center">
+
+        <TableRow>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:layout_width="500px"
+                    android:layout_height="200px"
+                    android:id="@+id/image1"
+                    android:src="@drawable/c1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="500px"
+                    android:layout_height="200px"
+                    android:id="@+id/text1"
+                    android:text="@string/dealNRewardHeader"
+                    android:textStyle="bold"
+                    android:textColor="#ff00ff"
+                    android:textColorHighlight="#000000"
+                    android:textIsSelectable="false"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingBottom="5pt">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150pt"
+                android:id="@+id/couponstodisplay"
+                android:src="@drawable/tgifcoupon"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5pt"
+            android:paddingBottom="5pt">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="30pt"
+                android:text="REDEM"
+                android:textSize="20sp"
+                android:id="@+id/buttonredem"
+                android:src="@drawable/tgifcoupon"/>
+        </LinearLayout>
+
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:gravity="center"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <TableRow>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:layout_width="300px"
+                        android:layout_height="300px"
+                        android:id="@+id/icon1"
+                        android:src="@drawable/share"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:layout_width="300px"
+                        android:layout_height="300px"
+                        android:id="@+id/icon2"
+                        android:src="@drawable/dollar"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:layout_width="300px"
+                        android:layout_height="300px"
+                        android:id="@+id/walleticon"
+                        android:src="@drawable/wallet"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+                    <ImageButton
+                        android:layout_width="300px"
+                        android:layout_height="300px"
+                        android:id="@+id/icon4"
+                        android:src="@drawable/homeicon"/>
+                </LinearLayout>
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</RelativeLayout>
